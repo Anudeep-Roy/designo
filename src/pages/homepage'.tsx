@@ -1,15 +1,19 @@
 import Header from "@/components/header"
+import HomeBanner from "@/components/homeBanner"
+import HomeCourses from "@/components/homeCourses"
+import Values from "@/components/values"
+import FooterContainer from "@/components/footerContainer"
 
 export default function Homepage() {
     return (
-        <div className="container">
-            <Header />
-            <h1>The quick brown fox jumps over the lazy dog</h1>
-            <h2>Hello World</h2>
-            <h3>Hello World</h3>
-            <p>Hello World</p>
-            <button className="primary">Click</button>
-            <button className="light">Click</button>
-        </div>
+        <>
+            <div className="container">
+                <Header />
+                <HomeBanner />
+                <HomeCourses />
+                <Values />
+            </div>
+            <FooterContainer />
+        </>
     )
 }

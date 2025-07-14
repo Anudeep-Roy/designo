@@ -1,0 +1,33 @@
+@use '../variables.scss' as *;
+
+.home-banner {
+    background-color: $peach;
+    height: 640px;
+    border-radius: 15px;
+    background-image: url('/assets/home/desktop/bg-pattern-hero-home.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    color: $white;
+    display: flex;
+    padding: 0 95px;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 0 160px;
+    .banner-left, .banner-right {
+        flex-basis: 0;
+        flex-grow: 1;
+        position: relative;
+    }
+    .banner-left {
+        button {
+            margin-top: 40px;
+        }
+    }
+    .banner-right {
+        img {
+            position: absolute;
+            top: -300px;
+            left: 100px;
+        }
+    }
+}

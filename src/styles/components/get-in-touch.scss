@@ -1,0 +1,20 @@
+@use '../variables.scss' as *;
+
+.get-in-touch {
+    display: flex;
+    justify-content: space-between;
+    padding: 46px 95px;
+    background-color: $peach;
+    align-items: center;
+    border-radius: 15px;
+    background-image: url('/assets/web-design/desktop/bg-pattern-intro-web.svg');
+    background-repeat: repeat-y;
+    background-position-x: right;
+    background-position-y: center;
+    position: relative;
+    top: 72px;
+    .touch-left {
+        color: $white;
+        width: 40%;
+    }
+}
