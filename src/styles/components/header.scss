@@ -1,0 +1,28 @@
+@use '../variables.scss' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 0;
+    .header-left {
+        display: flex;
+        gap: 16px;
+        img {
+            height: 24px;
+            width: auto
+        }
+    }
+    .header-right { 
+        display: flex;
+        gap: 42px;
+        a {
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: $black;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+    }
+}

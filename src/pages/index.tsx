@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Homepage from "./homepage'";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -20,12 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>The quick brown fox jumps over the lazy dog</h1>
-      <h2>Hello World</h2>
-      <h3>Hello World</h3>
-      <p>Hello World</p>
-      <button className="primary">Click</button>
-      <button className="light">Click</button>
+      <Homepage />
     </>
   );
 }
