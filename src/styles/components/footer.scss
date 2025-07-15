@@ -14,11 +14,16 @@
         margin: 0 0 30px;
         border-bottom: 1px solid $dark-gray;
         .footer-top-left {
-            display: flex;
-            gap: 16px;
-            img {
-                height: 24px;
-                width: auto;
+            a {
+                display: flex;
+                gap: 16px;
+                &:hover {
+                    border: none;
+                }
+                img {
+                    height: 24px;
+                    width: auto;
+                }
             }
         }
         .footer-top-right {
@@ -55,8 +60,8 @@
         }
         .footer-bottom-right {
             display: flex;
-            justify-content: end;
-            align-items: end;
+            justify-content: flex-end;
+            align-items: flex-end;
             gap: 16px;
         }
     }

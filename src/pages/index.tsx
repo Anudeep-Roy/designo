@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Homepage from "./homepage'";
+import Homepage from "./homepage";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({

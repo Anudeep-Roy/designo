@@ -1,16 +1,18 @@
-
+import Link from "next/link"
 
 export default function Header() {
     return ( 
         <div className="header">
             <div className="header-left">
-                <img src={"./assets/logo.svg"} alt="logo" />
-                <img src={"./assets/company.svg"} alt="company" />
+                <Link href="/">
+                    <img src={"./assets/logo.svg"} alt="logo" />
+                    <img src={"./assets/company.svg"} alt="company" />
+                </Link>
             </div>
             <div className="header-right">
-                <a href="javascript:void(0)">Our Company</a>
-                <a href="javascript:void(0)">Locations</a>
-                <a href="javascript:void(0)">Contact</a>
+                <Link href="/about">Our Company</Link>
+                <Link href="/locations">Locations</Link>
+                <Link href="/contact">Contact</Link>
             </div>
         </div>
     )

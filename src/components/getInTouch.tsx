@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function GetInTouch() {
     return (
         <div className="get-in-touch">
@@ -6,7 +8,7 @@ export default function GetInTouch() {
                 <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
             </div>
             <div className="touch-right">
-                <button className="light">get in touch</button>
+                <Link href={'/contact'} className="light">get in touch</Link>
             </div>
         </div>
     )

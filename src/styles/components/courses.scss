@@ -9,6 +9,11 @@
         flex-grow: 1;
         height: 600px;
     }
+    &.page-courses {
+        .course-left, .course-right {
+            height: 300px;
+        }
+    }
     .course-right {
         display: flex;
         flex-direction: column;

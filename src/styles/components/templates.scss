@@ -1,0 +1,28 @@
+@use '../variables.scss' as *;
+
+.templates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 30px; 
+    margin: 0 0 160px;
+    .template {
+        flex: 1 1 calc((100% - 60px) / 3);
+        box-sizing: border-box;
+        border-radius: 15px;
+        overflow: hidden;
+        .image-container {
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            background: $light-pink;
+            padding: 32px;
+            text-align: center;
+            h3 {
+                text-transform: uppercase;
+                color: $peach;
+            }
+        }
+    }
+}

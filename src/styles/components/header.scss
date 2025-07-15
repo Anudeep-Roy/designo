@@ -6,8 +6,13 @@
     align-items: center;
     padding: 64px 0;
     .header-left {
-        display: flex;
-        gap: 16px;
+        a {
+            display: flex;
+            gap: 16px;
+            &:hover {
+                border: none;
+            }
+        }
         img {
             height: 24px;
             width: auto

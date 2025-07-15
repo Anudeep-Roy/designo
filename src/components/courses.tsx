@@ -1,21 +1,16 @@
-import Course from "./course"
+import Course from "./course";
 
-export default function HomeCourses() {
+export default function Courses() {
     return (
-        <div className="home-courses">
+        <div className="home-courses page-courses">
             <div className="course-left">
-                <Course
-                    image={'/assets/home/desktop/image-web-design-large.jpg' }
-                    title={'web design'}
-                    link={'/web-design'}
-                />
-            </div>
-            <div className="course-right">
                 <Course
                     image={'/assets/home/desktop/image-app-design.jpg'}
                     title={'app Design'}
                     link={'/app-design'}
                 />
+            </div>
+            <div className="course-right">
                 <Course
                     image={'/assets/home/desktop/image-graphic-design.jpg'}
                     title={'graphic Design'}
