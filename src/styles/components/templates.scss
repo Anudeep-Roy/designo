@@ -6,7 +6,7 @@
     gap: 32px 30px; 
     margin: 0 0 160px;
     .template {
-        flex: 1 1 calc((100% - 60px) / 3);
+        width: calc((100% - 60px) / 3);
         box-sizing: border-box;
         border-radius: 15px;
         overflow: hidden;
