@@ -11,7 +11,7 @@ export default function Value({image, title, description, buttonText}:valueProps
             <img src={image} alt={title} />
             {title && <h3>{title}</h3>}
             {description && <p>{description}</p>}
-            {buttonText && <button className="primary">{buttonText}</button>}
+            {buttonText && <a href="/locations" className="link primary">{buttonText}</a>}
         </div>
     )
 }

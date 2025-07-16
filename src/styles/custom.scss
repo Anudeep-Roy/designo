@@ -6,6 +6,7 @@
 @use './components/get-in-touch.scss' as *;
 @use './components/footer.scss' as *;
 @use './components/templates.scss' as *;
+@use './components/content-box.scss' as *;
 
 /*--Typography--*/
 @font-face {
@@ -85,9 +86,7 @@ a {
     &:hover {
         border-bottom: 1px solid;
     }
-    &.light {
-        background: $white;
-        color: $dark-gray;
+    &.link {
         font-size: 15px;
         font-weight: 500;
         letter-spacing: 1px;
@@ -98,6 +97,14 @@ a {
         cursor: pointer;
         border: none;
         text-decoration: none;
+        &.light {
+            background: $white;
+            color: $dark-gray;
+        }
+        &.primary {
+            background-color: $peach;
+            color: $white;
+        }
         &:hover {
             background: $light-peach;
             color: $white;

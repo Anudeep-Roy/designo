@@ -1,0 +1,31 @@
+@use '../variables.scss' as *;
+
+.content-box {
+    background: $light-pink;
+    display: flex;
+    height: 640px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 0 160px;
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+    .box-left {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .box-right {
+        flex-basis: 0;
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 95px;
+        h1 {
+            color: $peach;
+        }
+        p {
+            color: $dark-gray;
+        }
+    }
+}

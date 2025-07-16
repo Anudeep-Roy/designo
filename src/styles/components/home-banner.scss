@@ -49,3 +49,28 @@
         text-transform: capitalize;
     }
 }
+
+.about-banner {
+    display: flex;
+    background-color: $peach;
+    height: 480px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: url('/assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+    background-repeat: no-repeat;
+    background-position-y: -160px;
+    margin: 0 0 160px;
+    .banner-left {
+        flex-basis: 0;
+        flex-grow: 2;
+        padding: 0 95px;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-right {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}

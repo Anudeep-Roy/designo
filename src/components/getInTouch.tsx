@@ -8,7 +8,7 @@ export default function GetInTouch() {
                 <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
             </div>
             <div className="touch-right">
-                <Link href={'/contact'} className="light">get in touch</Link>
+                <Link href={'/contact'} className="link light">get in touch</Link>
             </div>
         </div>
     )
