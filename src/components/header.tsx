@@ -5,8 +5,8 @@ export default function Header() {
         <div className="header">
             <div className="header-left">
                 <Link href="/">
-                    <img src={"./assets/logo.svg"} alt="logo" />
-                    <img src={"./assets/company.svg"} alt="company" />
+                    <img src={"/assets/logo.svg"} alt="logo" />
+                    <img src={"/assets/company.svg"} alt="company" />
                 </Link>
             </div>
             <div className="header-right">

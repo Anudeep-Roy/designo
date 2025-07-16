@@ -1,7 +1,6 @@
 @use '../variables.scss' as *;
 
 .content-box {
-    background: $light-pink;
     display: flex;
     height: 640px;
     border-radius: 15px;
@@ -10,11 +9,25 @@
     &.reverse {
         flex-direction: row-reverse;
     }
+    &.location {
+        height: 320px;
+        gap: 30px;
+        margin: 0 0 32px;
+        .box-left, .box-right {
+            border-radius: 15px;
+        }
+        .box-left {
+            img {
+                border-radius: 15px;
+            }
+        }
+    }
     .box-left {
         flex-basis: 0;
         flex-grow: 1;
     }
     .box-right {
+        background: $light-pink;
         flex-basis: 0;
         flex-grow: 3;
         display: flex;
@@ -26,6 +39,13 @@
         }
         p {
             color: $dark-gray;
+        }
+        .addresses {
+            display: flex;
+            .address {
+                flex-basis: 0;
+                flex-grow: 1;
+            }
         }
     }
 }

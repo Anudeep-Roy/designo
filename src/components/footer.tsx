@@ -32,19 +32,19 @@ export default function Footer() {
                     </div>
                     <div className="footer-bottom-right">
                         <a href="javascript:void(0)">
-                            <img src={'/assets/shared/desktop/icon-facebook.svg'} />
+                            <img src={'/assets/shared/desktop/icon-facebook.svg'} alt="facebook"/>
                         </a>
                         <a href="javascript:void(0)">
-                            <img src={'/assets/shared/desktop/icon-youtube.svg'} />
+                            <img src={'/assets/shared/desktop/icon-youtube.svg'} alt="youtube"/>
                         </a>
                         <a href="javascript:void(0)">
-                            <img src={'/assets/shared/desktop/icon-twitter.svg'} />
+                            <img src={'/assets/shared/desktop/icon-twitter.svg'} alt="twitter"/>
                         </a>
                         <a href="javascript:void(0)">
-                            <img src={'/assets/shared/desktop/icon-pinterest.svg'} />
+                            <img src={'/assets/shared/desktop/icon-pinterest.svg'} alt="pinterest"/>
                         </a>
                         <a href="javascript:void(0)">
-                            <img src={'/assets/shared/desktop/icon-instagram.svg'} />
+                            <img src={'/assets/shared/desktop/icon-instagram.svg'} alt="instagram"/>
                         </a>
                     </div>
                 </div>

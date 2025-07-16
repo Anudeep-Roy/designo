@@ -11,6 +11,7 @@
         border-radius: 15px;
         overflow: hidden;
         .image-container {
+            display: flex;
             img {
                 width: 100%;
             }
