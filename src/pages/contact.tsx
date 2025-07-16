@@ -1,7 +1,6 @@
 import Header from "@/components/header"
 import FooterContainer from "@/components/footerContainer"
 import AboutBanner from "@/components/aboutBanner"
-import ContentBox from "@/components/contentBox"
 import Branches from "@/components/branches"
 
 export default function Contact() {
