@@ -3,7 +3,7 @@
 .content-box {
     display: flex;
     height: 640px;
-    border-radius: 15px;
+    border-radius: $border-radius;
     overflow: hidden;
     margin: 0 0 160px;
     &.reverse {
@@ -14,11 +14,11 @@
         gap: 30px;
         margin: 0 0 32px;
         .box-left, .box-right {
-            border-radius: 15px;
+            border-radius: $border-radius;
         }
         .box-left {
             img, iframe {
-                border-radius: 15px;
+                border-radius: $border-radius;
                 border: none;
                 height: 100%;
             }

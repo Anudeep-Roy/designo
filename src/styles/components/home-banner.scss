@@ -3,7 +3,7 @@
 .home-banner {
     background-color: $peach;
     height: 640px;
-    border-radius: 15px;
+    border-radius: $border-radius;
     background-image: url('/assets/home/desktop/bg-pattern-hero-home.svg');
     background-repeat: no-repeat;
     background-position: right;
@@ -36,7 +36,7 @@
 .page-banner {
     background-color: $peach;
     padding: 64px 190px;
-    border-radius: 15px;
+    border-radius: $border-radius;
     background-image: url('/assets/web-design/desktop/bg-pattern-intro-web.svg');
     background-repeat: no-repeat;
     background-position: right;
@@ -54,7 +54,7 @@
     display: flex;
     background-color: $peach;
     height: 480px;
-    border-radius: 15px;
+    border-radius: $border-radius;
     overflow: hidden;
     background-image: url('/assets/about/desktop/bg-pattern-hero-about-desktop.svg');
     background-repeat: no-repeat;
@@ -96,6 +96,10 @@
                 color: $white;
                 font-size: 15px;
                 padding: 0 16px 12px;
+                &:focus-visible {
+                    outline: none;
+                    box-shadow: none;
+                }
                 &::placeholder {
                     color: $white;
                     opacity: 0.5;

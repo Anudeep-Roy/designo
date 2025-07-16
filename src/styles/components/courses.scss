@@ -42,7 +42,7 @@
         top: 0;
         position: absolute;
         z-index: 1;
-        border-radius: 15px;
+        border-radius: $border-radius;
     }
     &::after {
         content: "";
@@ -54,7 +54,7 @@
         background-color: $black;
         opacity: 0.7;
         z-index: 2;
-        border-radius: 15px;
+        border-radius: $border-radius;
         transition: 0.5s;
     }
     &:hover {
