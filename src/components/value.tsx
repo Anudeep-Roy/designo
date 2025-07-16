@@ -5,13 +5,15 @@ interface valueProps  {
     buttonText: string;
 }
 
+import Link from "next/link";
+
 export default function Value({image, title, description, buttonText}:valueProps) {
     return (
         <div className="value">
             <img src={image} alt={title} />
             {title && <h3>{title}</h3>}
             {description && <p>{description}</p>}
-            {buttonText && <a href="/locations" className="link primary">{buttonText}</a>}
+            {buttonText && <Link href="/locations" className="link primary">{buttonText}</Link>}
         </div>
     )
 }
