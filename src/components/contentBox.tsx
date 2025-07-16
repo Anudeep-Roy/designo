@@ -7,12 +7,13 @@ interface contentProps {
     description: React.ReactNode;
 }
 
-export default function ContentBox({image, title, dir, type, map, description}: contentProps) {
+export default function ContentBox({ image, title, dir, type, map, description }: contentProps) {
+    
     return (
         <div className={`content-box ${dir} ${type}`}>
             <div className="box-left">
                 {image && <img alt={title} src={image} />}
-                {map}
+                {map && map}
             </div>
             <div className="box-right">
                 <h1>{title}</h1>

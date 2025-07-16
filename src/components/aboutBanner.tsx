@@ -1,12 +1,21 @@
-export default function AboutBanner() {
+interface aboutProps {
+    title: string;
+    description: string;
+    image?: string;
+    form?: React.ReactNode;
+    type?: string
+}
+
+export default function AboutBanner({title, description, image, form, type}: aboutProps) {
     return (
-        <div className="about-banner">
+        <div className={`about-banner ${type}`}>
             <div className="banner-left">
-                <h1>{'About Us'}</h1>
-                <p>{"Founded in 2010, we are a creative agency that produces lasting results for our clients. We've partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We're always looking forward to creating brands, products, and digital experiences that connect with our clients' audiences."}</p>
+                <h1>{title}</h1>
+                <p>{description}</p>
             </div>
             <div className="banner-right">
-                <img alt="about-us" src="/assets/about/desktop/image-about-hero.jpg" />
+                {image && <img alt={title} src={image} />}
+                {form && form}
             </div>
         </div>
     )

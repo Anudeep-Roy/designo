@@ -9,7 +9,11 @@ export default function About() {
         <div className="about">
             <div className="container">
                 <Header />
-                <AboutBanner />
+                <AboutBanner
+                    title={'About Us'}
+                    description={"Founded in 2010, we are a creative agency that produces lasting results for our clients. We've partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We're always looking forward to creating brands, products, and digital experiences that connect with our clients' audiences."}
+                    image={"/assets/about/desktop/image-about-hero.jpg"}
+                />
                 <ContentBox
                     image={'/assets/about/desktop/image-world-class-talent.jpg'}
                     title={'World-class talent'}

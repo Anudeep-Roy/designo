@@ -60,6 +60,17 @@
     background-repeat: no-repeat;
     background-position-y: -160px;
     margin: 0 0 160px;
+    &.contact {
+        .banner-left {
+            flex-basis: 0;
+            flex-grow: 3;
+        }
+        .banner-right {
+            padding: 55px 96px;
+            flex-basis: 0;
+            flex-grow: 2;
+        }
+    }
     .banner-left {
         flex-basis: 0;
         flex-grow: 2;
@@ -72,5 +83,35 @@
     .banner-right {
         flex-basis: 0;
         flex-grow: 1;
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 25px;
+            height: 100%;
+            input, textarea {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $white;
+                color: $white;
+                font-size: 15px;
+                padding: 0 16px 12px;
+                &::placeholder {
+                    color: $white;
+                    opacity: 0.5;
+                }
+            }
+            input {
+                height: 38px;
+            }
+            textarea {
+                height: 102px;
+                resize: none;
+            }
+            .btn-container {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
     }
 }
