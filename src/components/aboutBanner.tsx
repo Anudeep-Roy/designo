@@ -4,9 +4,15 @@ interface aboutProps {
     image?: string;
     form?: React.ReactNode;
     type?: string
+    images?: {
+        desktop: string;
+        tablet: string;
+        mobile: string;
+    }
 }
+import Picture from "./picture";
 
-export default function AboutBanner({title, description, image, form, type}: aboutProps) {
+export default function AboutBanner({title, description, images, form, type}: aboutProps) {
     return (
         <div className={`about-banner ${type}`}>
             <div className="banner-left">
@@ -14,7 +20,14 @@ export default function AboutBanner({title, description, image, form, type}: abo
                 <p>{description}</p>
             </div>
             <div className="banner-right">
-                {image && <img alt={title} src={image} />}
+                {images && (
+                    <Picture
+                        title={title}
+                        desktop={images.desktop}
+                        tablet={images.tablet}
+                        mobile={images.mobile}
+                    />
+                )}
                 {form && form}
             </div>
         </div>

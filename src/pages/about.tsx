@@ -9,13 +9,23 @@ export default function About() {
         <div className="about">
             <div className="container">
                 <Header />
+            </div>
+            <div className="container home">
                 <AboutBanner
                     title={'About Us'}
                     description={"Founded in 2010, we are a creative agency that produces lasting results for our clients. We've partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We're always looking forward to creating brands, products, and digital experiences that connect with our clients' audiences."}
-                    image={"/assets/about/desktop/image-about-hero.jpg"}
+                    images={{
+                        desktop: "/assets/about/desktop/image-about-hero.jpg",
+                        tablet: "/assets/about/tablet/image-about-hero.jpg",
+                        mobile: "/assets/about/mobile/image-about-hero.jpg"
+                    }}
                 />
                 <ContentBox
-                    image={'/assets/about/desktop/image-world-class-talent.jpg'}
+                    images={{
+                        desktop: '/assets/about/desktop/image-world-class-talent.jpg',
+                        tablet: '/assets/about/tablet/image-world-class-talent.jpg',
+                        mobile: '/assets/about/mobile/image-world-class-talent.jpg'
+                    }}
                     title={'World-class talent'}
                     description={
                         <>
@@ -24,9 +34,17 @@ export default function About() {
                         </>
                     }
                 />
+            </div>
+            <div className="container">
                 <Branches />
+            </div>
+            <div className="container home">
                 <ContentBox
-                    image={'/assets/about/desktop/image-real-deal.jpg'}
+                    images={{
+                        desktop: '/assets/about/desktop/image-real-deal.jpg',
+                        tablet: '/assets/about/tablet/image-real-deal.jpg',
+                        mobile: '/assets/about/mobile/image-real-deal.jpg'
+                    }}
                     title={'The real deal'}
                     dir={'reverse'}
                     description={
