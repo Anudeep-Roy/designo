@@ -13,8 +13,23 @@
     background-position-y: center;
     position: relative;
     top: 72px;
+    @media(min-width: $screen-md) and (max-width: $screen-lg)  {
+        padding: 60px;
+    }
+    @media(max-width: $screen-lg) {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+        
+    }
+    @media(max-width: $screen-md) {
+        padding: 64px 24px;
+    }
     .touch-left {
         color: $white;
         width: 40%;
+        @media(max-width: $screen-lg) {
+            width: auto;
+        }
     }
 }

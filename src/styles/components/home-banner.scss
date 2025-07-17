@@ -13,6 +13,18 @@
     align-items: center;
     overflow: hidden;
     margin: 0 0 160px;
+    @media(max-width: $screen-lg) {
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+        height: 840px;
+        padding: 60px 58px;
+    }
+    @media(max-width: $screen-md) {
+        padding: 80px 24px;
+        gap: 80px;
+        border-radius: 0;
+    }
     .banner-left, .banner-right {
         flex-basis: 0;
         flex-grow: 1;
@@ -27,8 +39,17 @@
     .banner-right {
         img {
             position: absolute;
-            top: -300px;
-            left: 100px;
+            top: -150px;
+            left: 200px;
+            @media (min-width: $screen-xl) and (max-width: $screen-xxl) {
+                left: 100px;
+            }
+            @media (min-width: $screen-lg) and (max-width: $screen-xl) {
+                left: 50px;
+            }
+            @media (max-width: $screen-lg) { 
+                position: static;
+            }
         }
     }
 }

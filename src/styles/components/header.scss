@@ -5,6 +5,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 64px 0;
+    @media(max-width: $screen-md) {
+        padding: 35px 0;
+    }
     .header-left {
         a {
             display: flex;
@@ -19,17 +22,28 @@
         }
     }
     .header-right { 
-        display: flex;
-        gap: 42px;
-        a {
-            font-size: 14px;
-            line-height: 14px;
-            text-transform: uppercase;
-            color: $black;
-            text-decoration: none;
-            letter-spacing: 2px;
-            &:hover {
-                border-bottom: 1px solid;
+        .desk-menu {
+            display: flex;
+            gap: 42px;
+            @media(max-width: $screen-md) {
+                display: none;
+            }
+            a {
+                font-size: 14px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: $black;
+                text-decoration: none;
+                letter-spacing: 2px;
+                &:hover {
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+        .mobile-menu {
+            display: none;
+            @media(max-width: $screen-md) {
+                display: flex;
             }
         }
     }

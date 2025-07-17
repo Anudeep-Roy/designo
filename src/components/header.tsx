@@ -10,9 +10,16 @@ export default function Header() {
                 </Link>
             </div>
             <div className="header-right">
-                <Link href="/about">Our Company</Link>
-                <Link href="/locations">Locations</Link>
-                <Link href="/contact">Contact</Link>
+                <div className="desk-menu">
+                    <Link href="/about">Our Company</Link>
+                    <Link href="/locations">Locations</Link>
+                    <Link href="/contact">Contact</Link>
+                </div>
+                <div className="mobile-menu">
+                    <button className="mobile-menu-button link">
+                        <img src={'/assets/shared/desktop/mobile-menu.svg'} />
+                    </button>
+                </div>
             </div>
         </div>
     )

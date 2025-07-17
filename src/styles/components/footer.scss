@@ -6,6 +6,9 @@
     padding: 144px 0 72px;
     display: flex;
     flex-direction: column;
+    @media(max-width: $screen-md) {
+        padding: 144px 0 64px;
+    }
     .footer-top {
         display: flex;
         justify-content: space-between;
@@ -13,6 +16,10 @@
         padding: 0 0 40px;
         margin: 0 0 30px;
         border-bottom: 1px solid $dark-gray;
+        @media(max-width: $screen-md) {
+            flex-direction: column;
+            gap: 32px;
+        }
         .footer-top-left {
             a {
                 display: flex;
@@ -29,6 +36,10 @@
         .footer-top-right {
             display: flex;
             gap: 42px;
+            @media(max-width: $screen-md) {
+                flex-direction: column;
+                text-align: center;
+            }
             a {
                 font-size: 14px;
                 line-height: 14px;
@@ -45,6 +56,10 @@
     .footer-bottom {
         display: flex;
         justify-content: space-between;
+        @media(max-width: $screen-md) {
+            flex-direction: column;
+            gap: 40px;
+        }
         .footer-bottom-left, .footer-bottom-right {
             flex-basis: 0;
             flex-grow: 1;
@@ -52,6 +67,10 @@
         .footer-bottom-left {
             display: flex;
             gap: 30px;
+            @media(max-width: $screen-md) {
+                flex-direction: column;
+                text-align: center;
+            }
             .address {
                 flex-basis: 0;
                 flex-grow: 1;
@@ -63,6 +82,9 @@
             justify-content: flex-end;
             align-items: flex-end;
             gap: 16px;
+            @media(max-width: $screen-md) {
+                justify-content: center;
+            }
         }
     }
 }

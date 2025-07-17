@@ -9,7 +9,11 @@ export default function Homepage() {
         <>
             <div className="container">
                 <Header />
+            </div>
+            <div className="container home">
                 <HomeBanner />
+            </div>
+            <div className="container">
                 <HomeCourses />
                 <Values />
             </div>
