@@ -6,6 +6,10 @@
     margin: 0 0 160px;
     @media(max-width: $screen-lg) {
         flex-direction: column;
+        margin: 0 0 120px;
+    }
+    @media(max-width: $screen-sm) {
+        margin: 0 0 96px;
     }
     .course-left, .course-right {
         flex-basis: 0;
@@ -46,7 +50,7 @@
     @media(max-width: $screen-md) {
         height: 250px;
     }
-    img {
+    & > img {
         width: 100%;
         height: 100%;
         object-fit: cover;

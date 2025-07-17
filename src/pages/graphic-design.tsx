@@ -9,10 +9,14 @@ export default function GraphicDesign() {
         <div className="graphic-design">
             <div className="container">
                 <Header />
+            </div>
+            <div className="container home">
                 <PageBanner
                     title={'graphic design'}
                     subtitle={'We deliver eye-catching branding materials that are tailored to meet your business objectives.'}
                 />
+            </div>
+            <div className="container">
                 <div className="templates">
                     <Template
                         image={'/assets/graphic-design/desktop/image-change.jpg'}

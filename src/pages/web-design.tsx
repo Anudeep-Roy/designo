@@ -9,10 +9,14 @@ export default function WebDesign() {
         <div className="web-design">
             <div className="container">
                 <Header />
+            </div>
+            <div className="container home">
                 <PageBanner
                     title={'web design'}
                     subtitle={'We build websites that serve as powerful marketing tools and bring memorable brand experiences.'}
                 />
+            </div>
+            <div className="container">
                 <Templates />
                 <Courses />
             </div>

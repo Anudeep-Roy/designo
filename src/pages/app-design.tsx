@@ -9,10 +9,15 @@ export default function AppDesign() {
         <div className="app-design">
             <div className="container">
                 <Header />
+            </div>
+            <div className="container home">
                 <PageBanner
                     title={'app design'}
                     subtitle={'Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.'}
                 />
+            </div>
+            
+            <div className="container">
                 <div className="templates">
                     <Template
                         image={'/assets/app-design/desktop/image-airfilter.jpg'}

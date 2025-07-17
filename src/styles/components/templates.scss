@@ -5,11 +5,29 @@
     flex-wrap: wrap;
     gap: 32px 30px; 
     margin: 0 0 160px;
+    @media(max-width: $screen-lg) {
+        flex-direction: column;
+        margin: 0 0 120px;
+    }
+    @media(max-width: $screen-sm) {
+        margin: 0 0 96;
+    }
     .template {
         width: calc((100% - 60px) / 3);
         box-sizing: border-box;
         border-radius: $border-radius;
         overflow: hidden;
+        @media(max-width: $screen-lg) {
+            width: 100%;
+            display: flex;
+            .image-container, .content {
+                flex-basis: 0;
+                flex-grow: 1;
+            }
+        }
+        @media(max-width: $screen-sm) {
+            display: block;
+        }
         .image-container {
             display: flex;
             img {
@@ -21,6 +39,11 @@
             padding: 32px;
             text-align: center;
             transition: 0.5s;
+            @media(max-width: $screen-lg) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
             h3 {
                 text-transform: uppercase;
                 color: $peach;
