@@ -6,8 +6,9 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     function handleMenu() {
-        (menuOpen ? setMenuOpen(false) : setMenuOpen(true));
+        setMenuOpen(!menuOpen);
     }
+
 
     return ( 
         <>
