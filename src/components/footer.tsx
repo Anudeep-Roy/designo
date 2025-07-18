@@ -11,11 +11,11 @@ export default function Footer() {
                             <img src={"./assets/company-dark.svg"} alt="company" />
                         </Link>
                     </div>
-                    <div className="footer-top-right">
+                    <nav className="footer-top-right">
                         <Link href={'/about'}>Our Company</Link>
                         <Link href={'/locations'}>Locations</Link>
                         <Link href={'/contact'}>Contact</Link>
-                    </div>
+                    </nav>
                 </div>
                 <div className="footer-bottom">
                     <div className="footer-bottom-left">
@@ -30,7 +30,7 @@ export default function Footer() {
                             <p><b>M : contact@designo.co</b></p>
                         </div>
                     </div>
-                    <div className="footer-bottom-right">
+                    <nav className="footer-bottom-right">
                         <a href="javascript:void(0)">
                             <img src={'/assets/shared/desktop/icon-facebook.svg'} alt="facebook"/>
                         </a>
@@ -46,7 +46,7 @@ export default function Footer() {
                         <a href="javascript:void(0)">
                             <img src={'/assets/shared/desktop/icon-instagram.svg'} alt="instagram"/>
                         </a>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </footer>

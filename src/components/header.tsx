@@ -1,8 +1,17 @@
+import { useState } from "react";
 import Link from "next/link"
 
 export default function Header() {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    function handleMenu() {
+        menuOpen ? setMenuOpen(false) : setMenuOpen(true);
+    }
+
     return ( 
-        <div className="header">
+        <>
+        <header className="header">
             <div className="header-left">
                 <Link href="/">
                     <img src={"/assets/logo.svg"} alt="logo" />
@@ -10,17 +19,27 @@ export default function Header() {
                 </Link>
             </div>
             <div className="header-right">
-                <div className="desk-menu">
+                <nav className="desk-menu">
                     <Link href="/about">Our Company</Link>
                     <Link href="/locations">Locations</Link>
                     <Link href="/contact">Contact</Link>
-                </div>
+                </nav>
                 <div className="mobile-menu">
-                    <button className="mobile-menu-button link">
-                        <img src={'/assets/shared/desktop/mobile-menu.svg'} />
+                    <button className="mobile-menu-button link" onClick={handleMenu}>
+                        {menuOpen ? <img src={'/assets/shared/mobile/icon-close.svg'} /> : <img src={'/assets/shared/desktop/mobile-menu.svg'} />}
                     </button>
                 </div>
             </div>
-        </div>
+            </header>
+            {menuOpen && (
+                <div className="menubar">
+                    <nav>
+                        <Link href="/about">Our Company</Link>
+                        <Link href="/locations">Locations</Link>
+                        <Link href="/contact">Contact</Link>
+                    </nav>
+                </div>
+            )}
+        </>
     )
 }
