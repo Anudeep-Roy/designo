@@ -7,6 +7,8 @@ export default function Locations() {
         <div className="locations">
             <div className="container">
                 <Header />
+            </div>
+            <div className="container home">
                 <ContentBox
                     title={'Canada'}
                     type={'location'}

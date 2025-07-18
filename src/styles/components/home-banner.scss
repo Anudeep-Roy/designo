@@ -108,6 +108,9 @@
         margin: 0 0 96px;
     }
     &.contact {
+        @media(max-width: $screen-lg) {
+            flex-direction: column;
+        }
         .banner-left {
             flex-basis: 0;
             flex-grow: 3;
@@ -116,6 +119,9 @@
             padding: 55px 96px;
             flex-basis: 0;
             flex-grow: 2;
+            @media(max-width: $screen-md) {
+                padding: 0 24px 72px;
+            }
         }
     }
     .banner-left {
@@ -178,6 +184,9 @@
             .btn-container {
                 display: flex;
                 justify-content: flex-end;
+                @media(max-width: $screen-md) {
+                    justify-content: center;
+                }
             }
         }
     }
