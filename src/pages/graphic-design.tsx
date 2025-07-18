@@ -37,14 +37,24 @@ export default function GraphicDesign() {
                 <div className="home-courses page-courses">
                     <div className="course-left">
                         <Course
-                            image={'/assets/home/desktop/image-app-design.jpg'}
+                            images={{
+                                title: 'app-design',
+                                desktop: '/assets/home/desktop/image-app-design.jpg',
+                                tablet: '/assets/home/tablet/image-app-design.jpg',
+                                mobile: '/assets/home/mobile/image-app-design.jpg'
+                            }}
                             title={'app Design'}
                             link={'/app-design'}
                         />
                     </div>
                     <div className="course-right">
                         <Course
-                            image={'/assets/home/desktop/image-web-design-large.jpg'}
+                            images={{
+                                title: 'web-design',
+                                desktop: '/assets/home/desktop/image-web-design-large.jpg',
+                                tablet: '/assets/home/tablet/image-web-design.jpg',
+                                mobile: '/assets/home/mobile/image-web-design.jpg'
+                            }}
                             title={'web Design'}
                             link={'/web-design'}
                         />

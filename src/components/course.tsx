@@ -1,14 +1,25 @@
 interface CourseProps {
     title: string;
-    image: string;
-    link: string
+    link: string;
+    images: {
+        title: string;
+        desktop: string;
+        tablet: string;
+        mobile: string;
+    }
 }
 import Link from "next/link";
+import Picture from "./picture";
 
-export default function Course({title, image, link} : CourseProps) {
+export default function Course({title, images, link} : CourseProps) {
     return (
         <div className="course">
-            <img src={image} alt={title} />
+            <Picture
+                title={images.title}
+                desktop={images?.desktop}
+                tablet={images?.tablet}
+                mobile={images?.mobile}
+            />
             <h2>{title}</h2>
             <Link href={link}>
                 view projects

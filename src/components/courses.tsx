@@ -5,14 +5,24 @@ export default function Courses() {
         <div className="home-courses page-courses">
             <div className="course-left">
                 <Course
-                    image={'/assets/home/desktop/image-app-design.jpg'}
+                    images={{
+                        desktop: '/assets/home/desktop/image-app-design.jpg',
+                        tablet: '/assets/home/tablet/image-app-design.jpg',
+                        mobile: '/assets/home/mobile/image-app-design.jpg',
+                        title: 'app-design'
+                    }}
                     title={'app Design'}
                     link={'/app-design'}
                 />
             </div>
             <div className="course-right">
                 <Course
-                    image={'/assets/home/desktop/image-graphic-design.jpg'}
+                    images={{
+                        desktop: '/assets/home/desktop/image-graphic-design.jpg',
+                        tablet: '/assets/home/tablet/image-graphic-design.jpg',
+                        mobile: '/assets/home/mobile/image-graphic-design.jpg',
+                        title: 'graphic-design'
+                    }}
                     title={'graphic Design'}
                     link={'/graphic-design'}
                 />
