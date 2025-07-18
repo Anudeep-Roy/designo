@@ -41,4 +41,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 
 ## Deployed on Vercel:
 
-<a href="https://designo-umber.vercel.app/" target="_blank" rel="noopener noreferrer">Designo</a>
+<a href="https://designo-umber.vercel.app/" target="_blank">Designo</a>
